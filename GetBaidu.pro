@@ -5,7 +5,7 @@
 #-------------------------------------------------
 
 QT       += core gui
-
+QT       += network
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
 TARGET = getBaidu
@@ -25,10 +25,16 @@ DEFINES += QT_DEPRECATED_WARNINGS
 CONFIG += c++11
 
 SOURCES += \
+        getbaiduchannel.cpp \
+        getsongplaylistid.cpp \
+        getsongreallink.cpp \
         main.cpp \
         mainwindowfornet.cpp
 
 HEADERS += \
+        getbaiduchannel.h \
+        getsongplaylistid.h \
+        getsongreallink.h \
         mainwindowfornet.h
 
 FORMS += \
