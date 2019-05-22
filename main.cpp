@@ -1,10 +1,10 @@
-#include "mainwindow.h"
+#include "mainwindowfornet.h"
 #include <QApplication>
 
 int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
-    MainWindow w;
+    MainWindowForNet w;
     w.show();
 
     return a.exec();
