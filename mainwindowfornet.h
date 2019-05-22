@@ -45,7 +45,7 @@ private:
 
     GetSongPlayListId *m_getsonglistid;
     GetSongRealLink *m_getsongreallink;
-
+    SONG_INFO songInfo;
 };
 
 #endif // MAINWINDOWFORNET_H

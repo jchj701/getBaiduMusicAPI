@@ -59,8 +59,14 @@ void MainWindowForNet::channelSelected (int iChannel)
 {
     qDebug() << "Channel = " << iChannel;
     QList<QString> songId = m_getsonglistid->getSongIdList (QString::number(iChannel));
-    qDebug() << "songId = " << songId.first ();
-    m_getsongreallink->getSongRealLinkById(songId.first ());
+    //qDebug() << "songId = " << songId.first ();
+    foreach(QString ss, songId)
+    {
+        qDebug() << "ss" << ss;
+        songInfo = m_getsongreallink->getSongRealLinkById("539884149");
+        //qDebug() << "songInfo.name" << songInfo.songName;
+    }
+    //songInfo = m_getsongreallink->getSongRealLinkById("539884149");
 
 
 
